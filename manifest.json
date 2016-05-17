@@ -1,0 +1,19 @@
+{
+  "name": "Ingress Intel Passcodes",
+  "description": "Make input Passcodes by one click",
+  "version": "0.0.1",
+  "permissions": [
+    "tabs", "https://www.ingress.com/intel"
+  ],
+  "default_locale": "en",
+  "content_scripts": [{
+      "matches": ["https://www.ingress.com/intel"],
+      "js": ["./async.min.js", "./list.js", "./passcodes.js"]
+  }],
+  "icons": {
+    "16" : "assets/images/16/logo.png",
+    "48" : "assets/images/48/logo.png",
+    "128" : "assets/images/128/logo.png"
+  },
+  "manifest_version": 2
+}
